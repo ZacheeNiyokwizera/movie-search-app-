@@ -9,18 +9,24 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">MovieInfo</a>
-            </div>
-        </div>
-    </nav>
 
-    <div class="container">
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="index.html">Clear Search </a>
+        <div class="search-container">
+            <form id="searchForm">
+                <input type="text" id="searchText" placeholder="Search for any movie.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <div class="movie-info-container">
         <div id="movie" class="well"></div>
     </div>
+    <div class="footer">
 
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/main.js"></script>
